@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.jpm4j.examples</groupId>
+  <artifactId>jtwitter</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120928131522</lastUpdated>
+  </versioning>
+</metadata>
