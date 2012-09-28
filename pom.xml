@@ -3,16 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jpm4j.examples</groupId>
-	<artifactId>twitter</artifactId>
+	<artifactId>jtwitter</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>twitter</name>
-	<description>An example application that shows how maven can be used to create an executable application that is easily deployed via JPM4J.
-    The application is a simple twitter client. You can invoke it without arguments or you can invoke it with a search term:description
-          $ jtwitter java
-          
-    It is not necessary to provide credentials as this part of Twitter is open. This code is based on the twitter4j core, which is
-    a dependency of this artifact. 
+	<description>An example application that shows how maven can be used to create an executable application that is easily deployed via JPM4J. The application is a simple twitter client. You can invoke it without arguments or you can invoke it with a search term. It is not necessary to provide credentials as this part of Twitter is open. This code is based on the twitter4j core, which is
+a dependency of this artifact. 
     </description>
 	<build>
 		<plugins>
@@ -51,7 +47,7 @@
 	</properties>
 	<distributionManagement>
 		<repository>
-			<uniqueVersion>false</uniqueVersion>
+			<uniqueVersion>true</uniqueVersion>
 			<id>jtwitter</id>
 			<name>Local Repository</name>
 			<url>file:repository</url>
