@@ -10,6 +10,46 @@
 	<description>An example application that shows how maven can be used to create an executable application that is easily deployed via JPM4J. The application is a simple twitter client. You can invoke it without arguments or you can invoke it with a search term. It is not necessary to provide credentials as this part of Twitter is open. This code is based on the twitter4j core, which is
 a dependency of this artifact. 
     </description>
+
+	<developers>
+		<developer>
+			<id>pkriens</id>
+			<name>Peter Kriens</name>
+			<email>Peter.kriens@aQute.biz</email>
+			<url>http://www.aQute.biz/Bio</url>
+			<organization>aQute</organization>
+			<organizationUrl>http://www.aQute.biz</organizationUrl>
+			<roles>
+				<role>Programmer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>ASL 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>The Apache Software License, Version 2.0</comments>
+		</license>
+	</licenses>
+	
+    <organization>
+        <name>JPM4J, Just another Package Manager for Java</name>
+        <url>https://www.jpm4j.org</url>
+    </organization>
+    
+    <scm>
+        <url>https://www.github.org/jpm4j/jpm4j.jtwitter</url>
+        <developerConnection>git@github.com:jpm4j/jpm4j.twitter.git</developerConnection>
+        <connection>git://github.com/jpm4j/jpm4j.twitter.git</connection>
+    </scm>
+    
+    <issueManagement>
+        <url>https://github.com/jpm4j/jpm4j.twitter/issues</url>
+        <system>Github</system>
+    </issueManagement>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -23,7 +63,8 @@ a dependency of this artifact.
 						</manifest>
 						<manifestEntries>
 							<JPM-Command>jtwitter</JPM-Command>
-							<JPM-Classpath>org.twitter4j:twitter4j-core@2.2.6</JPM-Classpath>
+                            <JPM-Classpath>org.twitter4j:twitter4j-core@2.2.6</JPM-Classpath>
+                            <Bundle-Icon>image.png;size=64</Bundle-Icon>
 						</manifestEntries>
 					</archive>
 				</configuration>
