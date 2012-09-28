@@ -5,7 +5,7 @@ import twitter4j.*;
 public class Main {
 
 	public static void main(String args[]) throws TwitterException {
-		System.out.println("JTwitter Client");
+		System.out.println("JTwitter");
 		Twitter twitter = new TwitterFactory().getInstance();
 		Query query = new Query(args.length == 0 ? "java" : args[0]);
 		QueryResult result = twitter.search(query);
