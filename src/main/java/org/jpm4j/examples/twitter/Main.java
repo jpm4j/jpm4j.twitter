@@ -9,6 +9,7 @@ public class Main {
 		Twitter twitter = new TwitterFactory().getInstance();
 		Query query = new Query(args.length == 0 ? "java" : args[0]);
 		QueryResult result = twitter.search(query);
+
 		for (Tweet tweet : result.getTweets()) {
 			System.out.printf("@%-20s %s\n", tweet.getFromUser(), tweet.getText());
 		}
