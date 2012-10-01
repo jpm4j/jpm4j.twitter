@@ -5,8 +5,8 @@
 	<groupId>org.jpm4j.examples</groupId>
 	<artifactId>jtwitter</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0</version>
-	<name>twitter</name>
+	<version>1.0.1</version>
+	<name>jtwitter</name>
 	<description>An example application that shows how maven can be used to create an executable application that is easily deployed via JPM4J. The application is a simple twitter client. You can invoke it without arguments or you can invoke it with a search term. It is not necessary to provide credentials as this part of Twitter is open. This code is based on the twitter4j core, which is
 a dependency of this artifact. 
     </description>
@@ -23,6 +23,11 @@ a dependency of this artifact.
 				<role>Programmer</role>
 			</roles>
 		</developer>
+        <developer>
+            <id>richard</id>
+            <name>Richard Nicholson</name>
+            <email>Richard.Nicholson@paremus.com</email>
+        </developer>
 	</developers>
 
 	<licenses>
@@ -40,7 +45,7 @@ a dependency of this artifact.
     </organization>
     
     <scm>
-        <url>https://www.github.org/jpm4j/jpm4j.jtwitter</url>
+        <url>https://www.github.com/jpm4j/jpm4j.jtwitter</url>
         <developerConnection>git@github.com:jpm4j/jpm4j.twitter.git</developerConnection>
         <connection>git://github.com/jpm4j/jpm4j.twitter.git</connection>
     </scm>
